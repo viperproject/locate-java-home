@@ -10,7 +10,7 @@
     "url": "git+https://github.com/viperproject/locate-java-home.git"
   },
   "scripts": {
-    "prepare": "tsc && tsc -p tsconfig.es6.json && javac -source 1.7 -target 1.7 ts/test/fixtures/EnvironmentTest.java",
+    "prepare": "tsc && tsc -p tsconfig.es6.json && javac --release 8 ts/test/fixtures/EnvironmentTest.java",
     "test": "npm run prepare && mocha js/es5/test --timeout 30000"
   },
   "bin": {
@@ -36,6 +36,6 @@
     "@types/node": "^25.1.0",
     "@types/semver": "^7.5.6",
     "mocha": "^11.0.1",
-    "typescript": "^5.3.2"
+    "typescript": "^6.0.3"
   }
 }
