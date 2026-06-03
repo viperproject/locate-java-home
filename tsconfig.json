@@ -9,6 +9,8 @@
         "noUnusedLocals": true,
         "noImplicitThis": true,
         "declaration": true,
+        "types": ["node", "mocha"],
+        "rootDir": "ts",
         "outDir": "js/es5"
     },
     "include": [
